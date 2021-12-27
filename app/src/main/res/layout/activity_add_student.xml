@@ -20,6 +20,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/AddName"
+                    android:textAlignment="center" />
+
                 <EditText
                     android:id="@+id/AddNameStudent"
                     android:layout_width="match_parent"
@@ -29,14 +36,28 @@
                     android:inputType="textPersonName"
                     android:autofillHints="" />
 
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/AddSurname"
+                    android:textAlignment="center" />
+
                 <EditText
                     android:id="@+id/AddSurname"
                     android:layout_width="match_parent"
                     android:layout_height="61dp"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    tools:hint="AddSurname"
+                    tools:hint="@string/AddSurname"
                     android:autofillHints="" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Addlastname"
+                    android:textAlignment="center" />
 
                 <EditText
                     android:id="@+id/addOtch"
@@ -45,6 +66,12 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     tools:hint="Last name" />
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/AddPspSer"
+                    android:textAlignment="center" />
                 <EditText
                     android:id="@+id/addPaspSer"
                     android:layout_width="match_parent"
@@ -52,6 +79,12 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     tools:hint="serial" />
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Addpspnum"
+                    android:textAlignment="center" />
                 <EditText
                     android:id="@+id/addPaspNum"
                     android:layout_width="match_parent"
@@ -59,6 +92,12 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     tools:hint="number" />
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Addbirth"
+                    android:textAlignment="center" />
                 <EditText
                     android:id="@+id/addBirthday"
                     android:layout_width="match_parent"
@@ -66,6 +105,12 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     tools:hint="Date birthday" />
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/AddNumberGroup"
+                    android:textAlignment="center" />
                 <EditText
                     android:id="@+id/addSex"
                     android:layout_width="match_parent"
@@ -73,6 +118,12 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     tools:hint="sex" />
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/AddPhone"
+                    android:textAlignment="center" />
 
                 <EditText
                     android:id="@+id/addNumberGroup"
@@ -81,15 +132,29 @@
                     android:ems="10"
                     android:inputType="textPersonName"
                     tools:hint="@string/AddNumberGroup" />
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Addphone"
+                    android:textAlignment="center" />
 
                 <EditText
                     android:id="@+id/addPhone"
                     android:layout_width="match_parent"
                     android:layout_height="63dp"
                     android:ems="10"
+
                     android:inputType="textPersonName"
                     tools:hint="@string/AddPhone" />
 
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rooms"
+                    android:textAlignment="center" />
                 <Spinner
                     android:id="@+id/spinner_Room"
                     android:layout_width="match_parent"

@@ -55,7 +55,7 @@
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Last name"
+                    android:text="@string/Addlastname"
                     android:textAlignment="center" />
 
                 <EditText
@@ -70,7 +70,7 @@
                     android:id="@+id/textView8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Serial"
+                    android:text="@string/AddPspSer"
                     android:textAlignment="center" />
 
                 <EditText
@@ -85,7 +85,7 @@
                     android:id="@+id/textView11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Number"
+                    android:text="@string/Addpspnum"
                     android:textAlignment="center" />
 
                 <EditText
@@ -100,7 +100,7 @@
                     android:id="@+id/textView13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Birthday"
+                    android:text="@string/Addbirth"
                     android:textAlignment="center" />
 
                 <EditText

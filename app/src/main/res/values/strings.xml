@@ -6,16 +6,26 @@
 
     <string name="AddName">Name</string>
     <string name="AddSurname">Surname</string>
+    <string name="Addlastname">Last name</string>
+    <string name="AddPspSer">Passport serial</string>
+    <string name="Addpspnum">Passport number</string>
+    <string name="Addbirth">Date birthday</string>
+    <string name="AddSex">Sex</string>
+    <string name="Addnumber">Number group</string>
+    <string name="Addphone">Phone</string>
+    <string name="Addviolation">Name violation</string>
+
+
     <string name="AddNumberGroup">Number group</string>
     <string name="AddPhone">Phone number</string>
-    <string name="btn_Addstudent">Student</string>
+    <string name="btn_Addstudent">Add</string>
 
     <string name="AddNumberRoom">Number room</string>
     <string name="AddNumberFloor">Floor</string>
     <string name="AddFurniture">Furniture</string>
     <string name="AddNMaxCountLeaver">Max count</string>
     <string name="AddCountLeaver">Count leaver</string>
-    <string name="btn_AddRoom">Room</string>
+    <string name="btn_AddRoom">Add</string>
 
     <string name="btn_ListStudent">New student</string>
     <string name="btn_DeleteStudent">Delete</string>
