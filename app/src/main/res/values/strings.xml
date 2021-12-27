@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">DormitoryV2</string>
+    <string name="Student">Student</string>
+    <string name="Rooms">Room</string>
+    <string name="Violation">Violation</string>
+
+    <string name="AddName">Name</string>
+    <string name="AddSurname">Surname</string>
+    <string name="AddNumberGroup">Number group</string>
+    <string name="AddPhone">Phone number</string>
+    <string name="btn_Addstudent">Student</string>
+
+    <string name="AddNumberRoom">Number room</string>
+    <string name="AddNumberFloor">Floor</string>
+    <string name="AddFurniture">Furniture</string>
+    <string name="AddNMaxCountLeaver">Max count</string>
+    <string name="AddCountLeaver">Count leaver</string>
+    <string name="btn_AddRoom">Room</string>
+
+    <string name="btn_ListStudent">New student</string>
+    <string name="btn_DeleteStudent">Delete</string>
+
+    <string name="btn_AddViolation">Add violation</string>
+    <string name="NameViolation">Name violation</string>
+    <string name="DeskViolation">Description</string>
+
+    <string name="StudentViolation">Student violation</string>
+    <string name="AddStudentViolation">Add</string>
+    <string name="AddNewViolation">Add student violation</string>
+</resources>

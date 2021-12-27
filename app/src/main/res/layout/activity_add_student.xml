@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="642dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/AddNameStudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:ems="10"
+                    android:hint="@string/AddName"
+                    android:inputType="textPersonName"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:id="@+id/AddSurname"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:hint="AddSurname"
+                    android:autofillHints="" />
+
+                <EditText
+                    android:id="@+id/addOtch"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:hint="Last name" />
+                <EditText
+                    android:id="@+id/addPaspSer"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:hint="serial" />
+                <EditText
+                    android:id="@+id/addPaspNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:hint="number" />
+                <EditText
+                    android:id="@+id/addBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:hint="Date birthday" />
+                <EditText
+                    android:id="@+id/addSex"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:hint="sex" />
+
+                <EditText
+                    android:id="@+id/addNumberGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:hint="@string/AddNumberGroup" />
+
+                <EditText
+                    android:id="@+id/addPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:hint="@string/AddPhone" />
+
+                <Spinner
+                    android:id="@+id/spinner_Room"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_NewStudent"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:onClick="NewStudentClick"
+            android:text="@string/btn_Addstudent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
