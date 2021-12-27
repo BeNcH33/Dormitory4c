@@ -137,15 +137,40 @@ public class ChangedStudent extends AppCompatActivity {
 
 
                 ETVname.setText(nameStr);
+                ETVname.setFocusable(false);
+                ETVname.setLongClickable(false);
+
                 ETVsurname.setText(surnameStr);
+                ETVsurname.setFocusable(false);
+                ETVsurname.setLongClickable(false);
+
                 ETVlastname.setText(lastname);
+                ETVlastname.setFocusable(false);
+                ETVlastname.setLongClickable(false);
+
                 ETVPaspSer.setText(paspser);
+                ETVPaspSer.setFocusable(false);
+                ETVPaspSer.setLongClickable(false);
+
                 ETVPaspNum.setText(paspnum);
+                ETVPaspNum.setFocusable(false);
+                ETVPaspNum.setLongClickable(false);
+
                 ETVBirth.setText(birth);
+                ETVBirth.setFocusable(false);
+                ETVBirth.setLongClickable(false);
 
                 ETVnumberGroup.setText(numberroomStr);
+                ETVnumberGroup.setFocusable(false);
+                ETVnumberGroup.setLongClickable(false);
+
                 ETVphonenumber.setText(phoneStr);
+                ETVphonenumber.setFocusable(false);
+                ETVphonenumber.setLongClickable(false);
+
                 ETVleaveroom.setText(leaveroomStr);
+                ETVleaveroom.setFocusable(false);
+                ETVleaveroom.setLongClickable(false);
 
             }while (cursor.moveToNext() == true);
         }
