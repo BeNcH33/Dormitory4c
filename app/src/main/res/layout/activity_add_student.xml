@@ -109,7 +109,7 @@
                     android:id="@+id/textView9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/AddNumberGroup"
+                    android:text="@string/AddSex"
                     android:textAlignment="center" />
                 <EditText
                     android:id="@+id/addSex"
@@ -122,7 +122,7 @@
                     android:id="@+id/textView12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/AddPhone"
+                    android:text="@string/AddNumberGroup"
                     android:textAlignment="center" />
 
                 <EditText
@@ -136,7 +136,7 @@
                     android:id="@+id/textView14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/Addphone"
+                    android:text="@string/AddPhone"
                     android:textAlignment="center" />
 
                 <EditText
