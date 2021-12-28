@@ -17,7 +17,7 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name" />
+                android:text="@string/AddName" />
 
             <TextView
                 android:id="@+id/tvName_V"
@@ -33,7 +33,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="SurName" />
+                android:text="@string/AddSurname" />
 
             <TextView
                 android:id="@+id/tvSurName_V"
@@ -49,7 +49,7 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nuber_Group" />
+                android:text="@string/AddNumberGroup" />
 
             <TextView
                 android:id="@+id/tvNumber_Group_V"
@@ -65,7 +65,7 @@
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Telephone" />
+                android:text="@string/AddPhone" />
 
             <TextView
                 android:id="@+id/tvTelephone"
@@ -81,7 +81,7 @@
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Room" />
+                android:text="@string/Rooms" />
 
             <TextView
                 android:id="@+id/tvLeaveRoom"

@@ -23,6 +23,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -228,6 +229,8 @@ public class ChangedStudent extends AppCompatActivity {
         try {
             long result=database.insertOrThrow(dbHelper.TABLE_VIOLATION, null, contentValues);
             Toast.makeText(getApplicationContext(), "Добавлено "+ result, Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
 
         }
         catch (Exception e){
@@ -261,6 +264,8 @@ public class ChangedStudent extends AppCompatActivity {
             long result = database.delete(dbHelper.TABLE_STUDENT, KEY_ID +" = ?", new String[] {cursor.getString(idIndex)});
             Toast.makeText(getApplicationContext(), "Удалено " + result, Toast.LENGTH_LONG).show();
             UpdateRoomTable(numberroom);
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         }
         else {
             Toast.makeText(getApplicationContext(), "Удаление по заданным данным невозможно", Toast.LENGTH_LONG).show();
