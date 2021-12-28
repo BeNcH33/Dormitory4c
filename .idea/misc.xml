@@ -6,12 +6,15 @@
         <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/activity_add_room.xml" value="0.20867768595041322" />
         <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/activity_add_student.xml" value="0.2" />
         <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/activity_add_violation.xml" value="0.22" />
+        <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/activity_changed_room.xml" value="0.18614130434782608" />
         <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/activity_changed_student.xml" value="0.25" />
+        <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/activity_list_rooms.xml" value="0.25" />
         <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/activity_list_student.xml" value="0.25" />
         <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/activity_list_violation.xml" value="0.20416666666666666" />
         <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/activity_student_violation.xml" value="0.20416666666666666" />
         <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/item.xml" value="0.22" />
+        <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/item_room.xml" value="0.5" />
         <entry key="..\:/LabAndPractice/DormitoryV2/app/src/main/res/layout/item_violation.xml" value="0.33" />
       </map>
     </option>

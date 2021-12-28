@@ -5,11 +5,13 @@ import static ru.bench.dormitoryv2.DBHelper.KEY_FURNITURE;
 import static ru.bench.dormitoryv2.DBHelper.KEY_MAXLEAVER;
 import static ru.bench.dormitoryv2.DBHelper.KEY_NUMBERFLOOR;
 import static ru.bench.dormitoryv2.DBHelper.KEY_NUMBERROOM;
+import static ru.bench.dormitoryv2.DBHelper.KEY_PASPNUM;
 import static ru.bench.dormitoryv2.DBHelper.KEY_PHONE;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -60,23 +62,38 @@ public class AddRoom extends AppCompatActivity {
         String furniture=this.addFurniture.getText().toString();
 
 
+        if (NumberRoom==""| Floor=="" | MaxCount=="" | Count=="" | furniture=="")
+        {
+            Toast.makeText(getApplicationContext(), "Введите данные", Toast.LENGTH_LONG).show();
+        }
+        else {
+            cursor = database.query(DBHelper.TABLE_ROOMS, null,
+                    KEY_NUMBERROOM + " = ?", new String[]{NumberRoom}, null, null, null);
 
-            contentValues = new ContentValues();
-            contentValues.put(KEY_NUMBERROOM, NumberRoom);
-            contentValues.put(KEY_NUMBERFLOOR, Floor);
-            contentValues.put(KEY_FURNITURE, furniture);
-            contentValues.put(KEY_MAXLEAVER, MaxCount);
-            contentValues.put(KEY_COUNTLEAVER, Count);
-
-            try {
-                long result = database.insert(dbHelper.TABLE_ROOMS, null, contentValues);
-                Toast.makeText(getApplicationContext(), "Добавлено " + result, Toast.LENGTH_LONG).show();
-            }catch (Exception e)
+            if (cursor.moveToFirst() == false)
             {
-                Toast.makeText(getApplicationContext(), "Произошла ошибка ", Toast.LENGTH_LONG).show();
+                contentValues = new ContentValues();
+                contentValues.put(KEY_NUMBERROOM, NumberRoom);
+                contentValues.put(KEY_NUMBERFLOOR, Floor);
+                contentValues.put(KEY_FURNITURE, furniture);
+                contentValues.put(KEY_MAXLEAVER, MaxCount);
+                contentValues.put(KEY_COUNTLEAVER, Count);
+                try
+                {
+                    long result = database.insert(dbHelper.TABLE_ROOMS, null, contentValues);
+                    Toast.makeText(getApplicationContext(), "Добавлено " + result, Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(this, MainActivity.class);
+                    startActivity(intent);
+                }
+                catch (Exception e)
+                {
+                    Toast.makeText(getApplicationContext(), "Произошла ошибка ", Toast.LENGTH_LONG).show();
+                }
             }
+            }
+        }
     }
-}
+
 
 
 

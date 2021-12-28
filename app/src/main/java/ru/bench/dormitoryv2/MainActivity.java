@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void OnClickAddRoom(View view)
     {
-        Intent intent = new Intent(this, AddRoom.class);
+        Intent intent = new Intent(this, list_rooms.class);
         startActivity(intent);
     }
 

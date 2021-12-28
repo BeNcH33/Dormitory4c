@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DormitoryV2">
         <activity
+            android:name=".ChangedRoom"
+            android:exported="false" />
+        <activity
+            android:name=".list_rooms"
+            android:exported="false" />
+        <activity
             android:name=".ChangedStudent"
             android:exported="false" />
         <activity

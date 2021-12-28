@@ -16,6 +16,7 @@
     <string name="Addnumber">Номер группы</string>
     <string name="Addphone">Телефон</string>
     <string name="Addviolation">Название нарушения</string>
+    <string name="btn_newroom">Добавить комнату</string>
 
     <string name="AddNumberGroup">Номер группы</string>
     <string name="AddPhone">Номер телефона</string>

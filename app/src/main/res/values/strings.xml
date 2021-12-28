@@ -15,6 +15,8 @@
     <string name="Addphone">Phone</string>
     <string name="Addviolation">Name violation</string>
 
+    <string name="btn_newroom">Add room</string>
+
 
     <string name="AddNumberGroup">Number group</string>
     <string name="AddPhone">Phone number</string>

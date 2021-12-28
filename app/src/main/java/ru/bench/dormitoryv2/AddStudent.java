@@ -111,8 +111,7 @@ public class AddStudent extends AppCompatActivity {
     {
         database = dbHelper.getWritableDatabase();
 
-        cursor = database.query(DBHelper.TABLE_STUDENT, null,
-                null, null, null, null, null);
+
 
         String name = this.etName.getText().toString();
         String surname = this.etSurname.getText().toString();
@@ -125,26 +124,41 @@ public class AddStudent extends AppCompatActivity {
         String telephone = this.etTelephone.getText().toString();
         String NumberRoom=this.spinnerRoom.getSelectedItem().toString();
 
-        contentValues = new ContentValues();
-        contentValues.put(KEY_NAME, name);
-        contentValues.put(KEY_SURNAME, surname);
-        contentValues.put(KEY_OTCH, otch);
-        contentValues.put(KEY_PASPSER, PaspSer);
-        contentValues.put(KEY_PASPNUM, PaspNum);
-        contentValues.put(KEY_BIRTHDAY, Birth);
-        contentValues.put(KEY_SEX, Sex);
-        contentValues.put(KEY_GROUPNUMBER, groupNumber);
-        contentValues.put(KEY_PHONE, telephone);
-        contentValues.put(KEY_LEAVEROOM, NumberRoom);
-
-        try {
-            long result=database.insertOrThrow(dbHelper.TABLE_STUDENT, null, contentValues);
-            Toast.makeText(getApplicationContext(), "Добавлено "+ result, Toast.LENGTH_LONG).show();
-            UpdateRoomTable(NumberRoom);
-            onClearInput();
+        if (name==""| surname=="" | otch=="" | PaspSer=="" | PaspNum=="" | Birth=="" | Sex=="" | groupNumber=="" | telephone=="" | NumberRoom=="")
+        {
+            Toast.makeText(getApplicationContext(), "Введите данные", Toast.LENGTH_LONG).show();
         }
-        catch (Exception e){
-            Toast.makeText(getApplicationContext(), "Произошла ошибка ", Toast.LENGTH_LONG).show();
+        else {
+
+            cursor = database.query(DBHelper.TABLE_STUDENT, null,
+                    KEY_PASPNUM + " = ?", new String[]{PaspNum}, null, null, null);
+
+            if (cursor.moveToFirst() == false) {
+                contentValues = new ContentValues();
+                contentValues.put(KEY_NAME, name);
+                contentValues.put(KEY_SURNAME, surname);
+                contentValues.put(KEY_OTCH, otch);
+                contentValues.put(KEY_PASPSER, PaspSer);
+                contentValues.put(KEY_PASPNUM, PaspNum);
+                contentValues.put(KEY_BIRTHDAY, Birth);
+                contentValues.put(KEY_SEX, Sex);
+                contentValues.put(KEY_GROUPNUMBER, groupNumber);
+                contentValues.put(KEY_PHONE, telephone);
+                contentValues.put(KEY_LEAVEROOM, NumberRoom);
+
+                try {
+                    long result = database.insertOrThrow(dbHelper.TABLE_STUDENT, null, contentValues);
+                    Toast.makeText(getApplicationContext(), "Добавлено " + result, Toast.LENGTH_LONG).show();
+                    UpdateRoomTable(NumberRoom);
+                    onClearInput();
+                    Intent intent = new Intent(this, MainActivity.class);
+                    startActivity(intent);
+                } catch (Exception e) {
+                    Toast.makeText(getApplicationContext(), "Произошла ошибка ", Toast.LENGTH_LONG).show();
+                }
+            } else {
+                Toast.makeText(getApplicationContext(), "Такая запись существует", Toast.LENGTH_LONG).show();
+            }
         }
     }
 
